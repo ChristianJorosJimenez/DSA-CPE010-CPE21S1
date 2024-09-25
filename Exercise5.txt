@@ -1,0 +1,62 @@
+
+Stack Function c++
+
+#include <iostream>
+#include <stack>
+using namespace std;
+
+void display(stack<string> pl);
+int main ()
+{
+  stack<string> pl;
+  pl.push("C++");
+  pl.push("Java");
+  pl.push("Python");
+  cout << "Initial stack:"; display (pl);
+
+  pl.pop();
+  pl.pop();
+  cout<<"in"<<"Final Stack:"; display (pl);
+  return 0;
+}
+void display(stack<string> pl)
+{
+  while(!pl.empty()) {
+
+
+    cout<<pl.top();
+  pl.pop();
+  }
+}
+
+
+
+Queue Function c++
+
+#include <iostream>
+#include <queue>
+using namespace std;
+
+void display(queue<string> pl);
+int main ()
+{
+  queue<string> pl;
+  pl.push("C++");
+  pl.push("Java");
+  pl.push("Python");
+  cout << "Initial Queue:"; display (pl);
+
+  pl.pop();
+  pl.pop();
+  cout<<"in"<<"Final Queue:"; display (pl);
+  return 0;
+}
+void display(queue<string> pl)
+{
+  while(!pl.empty()) {
+
+
+    cout<<pl.front();
+    pl.pop();
+  }
+}
