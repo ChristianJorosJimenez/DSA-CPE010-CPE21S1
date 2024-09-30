@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int arr[] = {55, 12, 323, 47, 10, 23, 5, 89, 12, 11};
+  int size = sizeof(arr) / sizeof(arr[0]);
+  
+  cout <<"original array consisting 10 elements: ";
+
+  int sum = 0;
+
+ 
+  for (int i = 0; i < size; i++) {
+    cout << arr[i] << " ";
+    sum += arr[i];
+  }
+
+cout << endl << "sum of all elements in your array:" << sum; 
+  return 0;
+}
